@@ -15,7 +15,7 @@ function App() {
   })
 
   const [stocks, setStocks] = useState({
-    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BABA', 'AMC', 'AMD'],
+    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BABA', 'AMC', 'AMD', 'DIS'],
     tickerDetails:[]
   })
 
@@ -268,10 +268,10 @@ function App() {
                       <tr>
                         <td>{stock.name}</td>     
 
-                        <td>${stock.currentPrice}</td>
+                        <td>${Math.round(stock.currentPrice * 100) / 100}</td>
 
                         {stock.change < 0 ?
-                        <td style={{color: "red"}}> ${Math.round(stock.change * 100) / 100}%</td> 
+                        <td style={{color: "red"}}> ${Math.round(stock.change * 100) / 100}</td> 
                         : 
                         <td style={{color: "rgb(50, 205, 50)"}}>${Math.round(stock.change * 100) / 100}</td>}
 
