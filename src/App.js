@@ -15,7 +15,7 @@ function App() {
   })
 
   const [stocks, setStocks] = useState({
-    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BA', 'AMC', 'AMD'],
+    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BABA', 'AMC', 'AMD'],
     tickerDetails:[]
   })
 
