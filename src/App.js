@@ -15,7 +15,7 @@ function App() {
   })
 
   const [stocks, setStocks] = useState({
-    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BABA', 'AMC', 'AMD', 'DIS'],
+    ticker: ['TSLA', 'AAPL', 'PLTR', 'NIO', 'UBER', 'LYFT', 'BABA', 'AMC', 'AMD', 'SPY'],
     tickerDetails:[]
   })
 
@@ -253,7 +253,7 @@ function App() {
         {/* STOCKS */}
         <Card border="dark shadow-lg" className='rounded mt-5 mb-5 mr-2 ml-2 cards'>
           <Card.Body>
-            <img className='mb-3' width='300' height='200' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/maxresdefault-1588953454.jpg"/>
+            <img className='mb-3' width='100%' height='150' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/maxresdefault-1588953454.jpg"/>
             <table class="table ">
                   <thead>
                     <tr>
