@@ -108,7 +108,7 @@ function App() {
         // console.log(res)
       })
       .catch(e => console.log(e))
-    }, 7200000); 
+    }, 3600000); 
   }, [])
 
   function getWeather(func, delay){
