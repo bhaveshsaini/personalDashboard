@@ -20,7 +20,7 @@ function App() {
   })
 
   //Weather
-  useEffect(() => { //updates every 2 hours
+  useEffect(() => { //updates every 1 hour
     getWeather(function getWeather() {
       axios.get('http://api.weatherapi.com/v1/forecast.json?key=3c39dd5af7ad40f3a32174316210407&q=fountain valley&days=5&aqi=no')
       .then((res) => {
@@ -179,51 +179,6 @@ function App() {
     <div className="mt-5  shadow-lg container-fluid text-center">
       <div className='card-group shadow-lg'>
 
-        {/* WORK MAIL */}
-        <Card border="dark" className="rounded shadow-lg cards mt-5 mb-5 mr-2 ml-2">
-          <Card.Body>
-            <img className='mb-2' src='https://i.pinimg.com/originals/9e/8d/60/9e8d60f99ed8d50161eba95f62193278.png' width='250' height='100'/>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>sample</td>
-                  <td>sample</td>
-                  <td>@sample</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>sample</td>
-                  <td>sample</td>
-                  <td>@sample</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>sample</td>
-                  <td>sample</td>
-                  <td>@sample</td>
-                </tr>
-
-                <tr>
-                  <th scope="row">3</th>
-                  <td>sample</td>
-                  <td>sample</td>
-                  <td>@sample</td>
-                </tr>
-              </tbody>
-            </table>
-            <Card.Title>work mail & meetings</Card.Title>
-          </Card.Body>
-        </Card>
-
         {/* WEATHER */}
         <Card border="dark" className='rounded shadow-lg cards mt-5 mb-5 mr-2 ml-2'>
           <Card.Body>
@@ -253,7 +208,7 @@ function App() {
         {/* STOCKS */}
         <Card border="dark shadow-lg" className='rounded mt-5 mb-5 mr-2 ml-2 cards'>
           <Card.Body>
-            <img className='mb-3' width='100%' height='150' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/maxresdefault-1588953454.jpg"/>
+            <img className='mb-3' width='70%' height='150' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/maxresdefault-1588953454.jpg"/>
             <table class="table ">
                   <thead>
                     <tr>
@@ -285,12 +240,12 @@ function App() {
           </Card.Body>
         </Card>
 
-        {/* TESLA */}
+        {/* TESLA
         <Card border="dark shadow-lg" className='rounded mt-5 mb-5 mr-2 ml-2 cards'>
           <Card.Body>
             <Card.Img src="https://images.hgmsites.net/hug/2021-tesla-model-3_100777876_h.jpg"/>
             </Card.Body>
-        </Card>
+        </Card> */}
       </div>
     </div>
   );
