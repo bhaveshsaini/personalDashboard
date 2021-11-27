@@ -34,18 +34,18 @@ function App() {
         let condition = res.data.current.condition.text
         let currentDate = new Date()
   
-        if(currentDate.getHours() > 20){ 
-          setWeather({
-            picture: 'https://i.pinimg.com/originals/3b/c4/09/3bc409491176b637edeb207a1d453b23.jpg',
-            city: res.data.location.name,
-            temperature: res.data.current.temp_f,
-            weather: condition,
-            threeDayForecast: res.data.forecast.forecastday,
-            day: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-            })
-        }
+        // if(currentDate.getHours() > 20){ 
+        //   setWeather({
+        //     picture: 'https://i.pinimg.com/originals/3b/c4/09/3bc409491176b637edeb207a1d453b23.jpg',
+        //     city: res.data.location.name,
+        //     temperature: res.data.current.temp_f,
+        //     weather: condition,
+        //     threeDayForecast: res.data.forecast.forecastday,
+        //     day: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        //     })
+        // }
           
-        else if(condition == 'overcast'){ setWeather(
+        if(condition == 'overcast'){ setWeather(
           {
             picture: 'https://www.pngitem.com/pimgs/m/50-508220_black-and-white-overcast-cloud-cloudy-clip-art.png',
             city: res.data.location.name,
